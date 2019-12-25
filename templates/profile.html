@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask Skipark App</title>
+
+    <script type="text/javascript" src="/static/js/jquery-3.4.1.js"></script>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/static/css/profile.css" rel="stylesheet">
+
+  </head>
+
+  <div class="container">
+    <div class="header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          <li role="presentation"><a href="/showProfile">Profile: {{ name }}</a></li>
+          <li role="presentation" ><a href="/">Home</a></li>
+          <!-- li role="presentation"><a href="#">Sign In</a></li>
+          <li role="presentation" class="active"><a href="#">Sign Up</a></li -->
+          <li role="presentation" class="active"><a href="#">Log out</a></li>
+        </ul>
+      </nav>
+      <h3 class="text-muted">Python Skipark App Profil</h3>
+    </div>
+
+    <div class="jumbotron">
+      <div class="row">
+        <h1>Skipark App</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <form class="form-profile">
+            <label for="inputName" class="sr-only">Name</label>
+            <input type="name" name="inputName" id="inputName" class="form-control" placeholder="{{ name }}" autofocus>
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="{{ email }}" autofocus>
+            <label for="inputBdate" class="sr-only">Date of birth</label>
+            <input type="date" name="inputBdate" id="inputBdate" class="form-control" placeholder="Date of birth" required autofocus>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <form class="form-profile">
+            <label for="inputClub" class="sr-only">Sports club</label>
+            <input type="club" name="inputClub" id="inputClub" class="form-control" placeholder="Sports club" required autofocus>
+            <label for="inputHeight" class="sr-only">Height</label>
+            <input type="height" name="inputHeight" id="inputHeight" class="form-control" placeholder="Heigth" required autofocus>
+            <label for="inputEmail" class="sr-only">Sport</label>
+            <input type="sport" name="inputSport" id="inputSport" class="form-control" placeholder="Sport" required autofocus>
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example</button>
+              <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <button id="btnUpdateProfile" class="btn btn-lg btn-primary btn-block" type="button">Update profile</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; Eivind Inc.</p>
+    </footer>
+
+  </div>
+
+  <body>
+  </body>
+</html>
